@@ -10,5 +10,3 @@ function init() {
 }
 
 window.document.onload = init();
-
-
