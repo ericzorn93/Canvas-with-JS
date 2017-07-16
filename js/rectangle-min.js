@@ -1,0 +1,1 @@
+function draw(){console.log("Hello")}function init(){draw()}window.document.onload=init();
