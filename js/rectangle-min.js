@@ -1,1 +1,1 @@
-function draw(){console.log("Hello")}function init(){draw()}window.document.onload=init();
+function drawArea(t,n){"use strict";context.clearRect(0,0,canvas.width,canvas.height),context.fillStyle="#ffff00",context.fillRect(0,0,t,n)}function mouseClick(){}function init(){drawArea(45,29),mouseClick()}var canvas=document.getElementById("myCanvas"),context=canvas.getContext("2d");window.document.onload=init(),window.document.onload=console.log("Document Loaded succesfully!");
