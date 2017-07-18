@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="213e54ef-52b8-44cb-8720-6d12ee2a562b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.codekit3" afterPath="$PROJECT_DIR$/config.codekit3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/rectangle-min.js" afterPath="$PROJECT_DIR$/js/rectangle-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/rectangle.js" afterPath="$PROJECT_DIR$/js/rectangle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -205,12 +200,12 @@
       <updated>1500144094326</updated>
       <workItem from="1500144095663" duration="296000" />
       <workItem from="1500395578263" duration="151000" />
-      <workItem from="1500395767084" duration="3846000" />
+      <workItem from="1500395767084" duration="3942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4293000" />
+    <option name="totallyTimeSpent" value="4389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="23" width="1400" height="812" extended-state="0" />
