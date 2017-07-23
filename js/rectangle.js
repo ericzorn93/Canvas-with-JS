@@ -105,7 +105,6 @@ ctx.canvas.addEventListener("mouseup", mouseUp, false);
 //Initializing Function
 function init() {
     fillForm();
-    // drawLine();
     // ctx.canvas.addEventListener('mousemove', getCoord);
 }
 
