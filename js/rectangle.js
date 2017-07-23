@@ -45,8 +45,9 @@ function getCoord(event) {
     
     var status = document.getElementById("status");
     status.innerHTML = "Mouse Position (Hover): " + mouseX + " | " + mouseY;
-    
-    //console.log(mousePosition);
+
+    //Console Logging the Object of Positions X and Y
+    console.log(mousePosition);
 
     return mousePosition;
 }
@@ -90,22 +91,16 @@ function mouseUp() {
 }
 
 
-ctx.canvas.addEventListener("mousedown", mouseDown, false);
-ctx.canvas.addEventListener("mousemove", mouseMove, false);
-ctx.canvas.addEventListener("mouseup", mouseUp, false);
 
 
-// ctx.canvas.addEventListener('click', function (event) {
-//     ctx.fillStyle = "orange";
-//     ctx.beginPath();
-//     ctx.fillRect(getCoord(event).valueX, getCoord(event).valueY, 30, 30);
-// });
 
 
 //Initializing Function
 function init() {
     fillForm();
-    // ctx.canvas.addEventListener('mousemove', getCoord);
+    ctx.canvas.addEventListener("mousedown", mouseDown, false);
+    ctx.canvas.addEventListener("mousemove", mouseMove, false);
+    ctx.canvas.addEventListener("mouseup", mouseUp, false);
 }
 
 
