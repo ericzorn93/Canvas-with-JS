@@ -1,1 +1,1 @@
-body{background:#4FBE7E;color:#fff;font-family:"Passon One",sans-serif}#myCanvas{border:2px solid white;background:black}
+body{background:#4FBE7E;color:#fff;font-family:"Passon One",sans-serif}#myCanvas{border:2px solid white;background:black;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
