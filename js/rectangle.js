@@ -1,11 +1,11 @@
 /* Eric Zorn: July 15, 2017, Module 6 */
 
 //Assurance that the document it loaded
-window.document.onload = console.log('The document is loaded!');
+window.document.onload = console.log("The document is loaded!");
 
 //Canvas and Context Globals
-var canvas = window.document.getElementById('myCanvas');
-var ctx = canvas.getContext('2d');
+var canvas = window.document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
 var mousePressed = false;
 var startingPoint = null;
 var endingPoint = null;
@@ -20,10 +20,10 @@ canvas.height = innerHeight - 25;
 //Fill Out Form
 function fillForm(wid, hgt) {
     "use strict";
-    document.getElementById('recWid').value = wid;
-    document.getElementById('recHgt').value = hgt;
-    document.getElementById('areaOutput').value = wid * hgt;
-    document.getElementById('perimOutput').value = (wid * 2) + (hgt * 2);
+    document.getElementById("recWid").value = wid;
+    document.getElementById("recHgt").value = hgt;
+    document.getElementById("areaOutput").value = wid * hgt;
+    document.getElementById("perimOutput").value = (wid * 2) + (hgt * 2);
 
     return wid && hgt;
 }
@@ -43,7 +43,7 @@ function getCoord(event) {
     
     var secondMousePosition = [mouseX,mouseY];
     
-    var status = document.getElementById('status');
+    var status = document.getElementById("status");
     status.innerHTML = "Mouse Position (Hover): " + mouseX + " | " + mouseY;
     
     //console.log(mousePosition);
@@ -90,9 +90,9 @@ function mouseUp() {
 }
 
 
-ctx.canvas.addEventListener('mousedown', mouseDown, false);
-ctx.canvas.addEventListener('mousemove', mouseMove, false);
-ctx.canvas.addEventListener('mouseup', mouseUp, false);
+ctx.canvas.addEventListener("mousedown", mouseDown, false);
+ctx.canvas.addEventListener("mousemove", mouseMove, false);
+ctx.canvas.addEventListener("mouseup", mouseUp, false);
 
 
 // ctx.canvas.addEventListener('click', function (event) {
@@ -108,7 +108,6 @@ function init() {
     // drawLine();
     // ctx.canvas.addEventListener('mousemove', getCoord);
 }
-
 
 
 
