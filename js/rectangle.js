@@ -17,32 +17,17 @@ canvas.height = innerHeight - 25;
 
 
 
-//Fill Out Form
-function fillForm(wid, hgt) {
-    "use strict";
-    document.getElementById("recWid").value = wid;
-    document.getElementById("recHgt").value = hgt;
-    document.getElementById("areaOutput").value = wid * hgt;
-    document.getElementById("perimOutput").value = (wid * 2) + (hgt * 2);
-
-    return wid && hgt;
-}
-
-
 //Get Cursor Position
 
 function getCoord(event) {
     "use strict";
-    var mouseX = event.clientX - ctx.canvas.getBoundingClientRect().left;
-    var mouseY = event.clientY - ctx.canvas.getBoundingClientRect().top;
-    
+    var mouseX = parseInt(event.clientX - ctx.canvas.getBoundingClientRect().left);
+    var mouseY = parseInt(event.clientY - ctx.canvas.getBoundingClientRect().top);
     var mousePosition = {
         valueX: mouseX,
         valueY: mouseY
     };
-    
-    var secondMousePosition = [mouseX,mouseY];
-    
+    // var secondMousePosition = [mouseX,mouseY];
     var status = document.getElementById("status");
     status.innerHTML = "Mouse Position (Hover): " + mouseX + " | " + mouseY;
 
@@ -51,7 +36,6 @@ function getCoord(event) {
 
     return mousePosition;
 }
-
 
 
 //Mouse Down
@@ -75,29 +59,39 @@ function mouseMove(event) {
     if (mousePressed !== false) {
         ctx.clearRect(0, 0, innerWidth, innerHeight);
         endingPoint = {x: getCoord(event).valueX - startingPoint.x, y: getCoord(event).valueY - startingPoint.y};
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "yellow";
         ctx.fillRect(startingPoint.x, startingPoint.y, endingPoint.x, endingPoint.y);
     }
 }
- 
 
 //Mouse Up
 function mouseUp() {
     "use strict";
-    mousePressed = true;
-    if (mousePressed === true) {
-        ctx.clearRect(0, 0, 0, 0);
+    mousePressed = false;
+    var width = document.getElementById("recWid");
+    var height = document.getElementById("recHgt");
+    var area = document.getElementById("areaOutput");
+    var perimeter = document.getElementById("perimOutput");
+    var recWid = getCoord(event).valueX;
+    var recHgt = getCoord(event).valueY;
+    var finishedText = document.getElementById("finished");
+
+    //Fill Out Form
+    if (mousePressed === false) {
+        ctx.closePath();
+        width.value = recWid + " px";
+        height.value = recHgt + " px";
+        area.value = recWid * recHgt + " px";
+        perimeter.value = recWid + recWid + recHgt + recHgt + " px";
+        finishedText.innerHTML = "You have succesfully drawn a rectangle! Good Job!";
     }
 }
 
 
-
-
-
-
 //Initializing Function
 function init() {
-    fillForm();
+    "use strict";
+
     ctx.canvas.addEventListener("mousedown", mouseDown, false);
     ctx.canvas.addEventListener("mousemove", mouseMove, false);
     ctx.canvas.addEventListener("mouseup", mouseUp, false);

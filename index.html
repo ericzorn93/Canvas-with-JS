@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- Eric Zorn, Module 5: Homework 1, ICT 4570: Webscripting with JavaScript -->
 <!-- July 15, 2017 -->
 <html>
@@ -9,6 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -27,9 +28,9 @@
     <form id="rectangleForm">
 
         <label for="recWid">Width:</label>
-        <input id="recWid" type="number" placeholder='0' name="width">
+        <input id="recWid" type="text" placeholder='0' name="width" readonly>
         <label for="recHgt">Height:</label>
-        <input id="recHgt" type="number" placeholder='0' name="height">
+        <input id="recHgt" type="text" placeholder='0' name="height" readonly>
 
 
         <br/><br/>
@@ -41,13 +42,12 @@
 
     </form>
 
-    <br><br>
-
     <h2 id="status">0 | 0</h2>
+
+    <h2 class="finished" id="finished"></h2>
 
 
     <!-- Canvas -->
-
     <canvas id="myCanvas"></canvas>
 
 

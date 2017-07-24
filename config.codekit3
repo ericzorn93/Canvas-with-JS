@@ -55,6 +55,12 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/style.css.map",
+		"oF": 0
+		},
 	"\/css\/style.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -65,7 +71,7 @@
 		"oA": 0,
 		"oAP": "\/css\/style.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 2,
 		"uL": 1
 		},
 	"\/index.html": {
@@ -89,7 +95,7 @@
 		"oA": 0,
 		"oAP": "\/js\/rectangle-min.js",
 		"oF": 2,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/README.md": {
