@@ -109,7 +109,7 @@ var Rectangle = ((function () {
 })());
 
 //Assurance that the document it loaded
-// window.document.onload = console.log("The document is loaded!");
+window.document.onload = console.log("The document is loaded!");
 
 
 
