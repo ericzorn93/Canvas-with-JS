@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="213e54ef-52b8-44cb-8720-6d12ee2a562b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/rectangle.js" afterPath="$PROJECT_DIR$/js/rectangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/rectangle-min.js" afterPath="$PROJECT_DIR$/js/rectangle-min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,22 +19,12 @@
     <favorites_list name="Module 5" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rectangle.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/rectangle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -248,6 +237,7 @@
       <workItem from="1501017417401" duration="30000" />
       <workItem from="1501124785410" duration="111000" />
       <workItem from="1501193858984" duration="6090000" />
+      <workItem from="1501200995434" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/ericzorn93/Canvas-with-JS&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
       <created>1500407689932</created>
@@ -260,7 +250,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31858000" />
+    <option name="totallyTimeSpent" value="31890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,18 +626,18 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
     <entry file="file://$USER_HOME$/Desktop/test.html" />
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/rectangle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="433">
+          <caret line="90" column="90" lean-forward="false" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/rectangle.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+        <state relative-caret-position="198">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding />
         </state>
       </provider>
