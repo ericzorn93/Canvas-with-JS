@@ -1,4 +1,4 @@
-/* Eric Zorn: July 15, 2017, Module 6 */
+/* Eric Zorn: July 15, 2017, Module 6 Rectangle Homework Assignment with Canvas and Form */
 
 var Rectangle = ((function () {
     "use strict";
@@ -104,8 +104,8 @@ var Rectangle = ((function () {
         var posY = document.getElementById('positionY').value;
         var status = document.getElementById('status');
 
-        var mousePositionX = getCoord(event).valueX;
-        var mousePositionY = getCoord(event).valueY;
+        // var mousePositionX = getCoord(event).valueX;
+        // var mousePositionY = getCoord(event).valueY;
 
         ctx.fillStyle = "red";
         ctx.fillRect(posX, posY, width, height);

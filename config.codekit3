@@ -98,6 +98,12 @@
 		"sC": 2,
 		"tS": 0
 		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -121,6 +127,39 @@
 		"iS": 1182767,
 		"oA": 0,
 		"oAP": "\/screenshots\/documentLoaded.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Form Update\/EmptyForm.png": {
+		"ft": 32768,
+		"iS": 1023799,
+		"oA": 0,
+		"oAP": "\/screenshots\/Form Update\/EmptyForm.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Form Update\/RectangleChangeswithFormInput.png": {
+		"ft": 32768,
+		"iS": 984382,
+		"oA": 0,
+		"oAP": "\/screenshots\/Form Update\/RectangleChangeswithFormInput.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/Form Update\/UpdatePositioning&Wid:Hgt.png": {
+		"ft": 32768,
+		"iS": 1045989,
+		"oA": 0,
+		"oAP": "\/screenshots\/Form Update\/UpdatePositioning&Wid:Hgt.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -8,6 +8,8 @@ After doing some research, I've realized that there are many different libraries
 
 P.S. I also incorporated the touch events for mobile devices and also uses the SASS pre-processor for CSS.
 
+***Updated All Forms and Rectangle Output and the color of the form drawn rectangle updates to red vs yellow with the mouse click events
+
 https://github.com/ericzorn93/Canvas-with-JS
 
-Updated at 11:42am EST on July 28, 2017
+Updated at 2:34pm EST on July 29, 2017
