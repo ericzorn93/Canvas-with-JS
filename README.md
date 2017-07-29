@@ -13,3 +13,5 @@ P.S. I also incorporated the touch events for mobile devices and also uses the S
 https://github.com/ericzorn93/Canvas-with-JS
 
 Updated at 2:34pm EST on July 29, 2017
+
+Author, Eric Zorn
