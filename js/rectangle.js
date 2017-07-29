@@ -112,8 +112,11 @@ var Rectangle = ((function () {
 
 
         if (width && height) {
+            ctx.clearRect(0,0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.fillRect(width, height, posX, posY);
             area.value = (width * width) + (height * height) + " px";
-            perimeter.value = (width + width) + (height + height) + " px";
+            perimeter.value = (width * 2) + (height * 2);
             // status.innerHTML = "Mouse Position (Inputs)" + Math.abs(mousePositionX) + " | " + +Math.abs(mousePositionY);
             posXNoValue.value = getCoord(event).valueX;
             posYNoValue.value = Math.floor(Math.abs(getCoord(event).valueY));
@@ -139,10 +142,6 @@ var Rectangle = ((function () {
         document.getElementById('status').innerHTML = "Mouse Position (Inputs): " +  0 + " | " + 0;
         document.getElementById('areaOutput').innerHTML = "";
         document.getElementById('perimOutput').innerHTML = "";
-
-        document.getElementById('myButton').addEventListener('click', function () {
-            // document.getElementById('status').innerHTML = enterRectangle().positionX + " | " + Math.abs(enterRectangle().positionY);
-        });
     }
 
 

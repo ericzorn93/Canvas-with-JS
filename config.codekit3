@@ -115,6 +115,72 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/screenshots\/documentLoaded.png": {
+		"ft": 32768,
+		"iS": 1182767,
+		"oA": 0,
+		"oAP": "\/screenshots\/documentLoaded.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/mouseEventUp.png": {
+		"ft": 32768,
+		"iS": 1185127,
+		"oA": 0,
+		"oAP": "\/screenshots\/mouseEventUp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/newCanvas.png": {
+		"ft": 32768,
+		"iS": 1136999,
+		"oA": 0,
+		"oAP": "\/screenshots\/newCanvas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/positionCapture&FormFill.png": {
+		"ft": 32768,
+		"iS": 1364968,
+		"oA": 0,
+		"oAP": "\/screenshots\/positionCapture&FormFill.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/rectangleDrawing.png": {
+		"ft": 32768,
+		"iS": 1157636,
+		"oA": 0,
+		"oAP": "\/screenshots\/rectangleDrawing.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/screenshots\/updateRectangle&Form.png": {
+		"ft": 32768,
+		"iS": 1368076,
+		"oA": 0,
+		"oAP": "\/screenshots\/updateRectangle&Form.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
