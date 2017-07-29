@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Eric Zorn, Module 5: Homework 1, ICT 4570: Webscripting with JavaScript -->
-<!-- July 15, 2017 -->
+<!-- July 15, 2017  index.html-->
 
 <!--
     # Canvas-with-JS
@@ -29,7 +29,7 @@ Updated at 11:42am EST on July 28, 2017
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -45,18 +45,34 @@ Updated at 11:42am EST on July 28, 2017
     <form id="rectangleForm">
 
         <label for="recWid">Width:</label>
-        <input id="recWid" type="text" placeholder='0' name="width" readonly>
+        <input id="recWid" type="text" placeholder='0' name="width"/>
 
         <label for="recHgt">Height:</label>
-        <input id="recHgt" type="text" placeholder='0' name="height" readonly>
+        <input id="recHgt" type="text" placeholder='0' name="height"/>
+
+        <br/>
+        <br/>
+        <br/>
+        <label for="positionX">PositionX: (Optional)</label>
+        <input id="positionX" type="text" placeholder="0" name="positionX"/>
+
+        <br/>
+        <br/>
+        <label for="positionY">PositionY: (Optional)</label>
+        <input id="positionY" type="text" placeholder="0" name="positionY"/>
 
 
-        <br/><br/>
+        <br/><br/><br/>
         <label for="areaOutput">Area:</label>
-        <output id="areaOutput" type="text" name="areaOutput" readonly></output>
+        <output id="areaOutput" type="text" name="areaOutput"></output>
         <br/><br/>
         <label for="perimOutput">Perimeter:</label>
-        <output id="perimOutput" type="text" name="areaOutput" readonly></output>
+        <output id="perimOutput" type="text" name="areaOutput" ></output>
+
+        <br/> <br/>
+
+        <input type="button" id="myButton" value="Calculate and Draw" />
+        <input type="button" id="clearButton" value="Clear Canvas" />
 
     </form>
 

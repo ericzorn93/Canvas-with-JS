@@ -25,8 +25,8 @@ var Rectangle = ((function () {
         // "use strict";
         var userPosition = event.touches ? event.touches[0] : event;
         console.log(userPosition + "User Position");
-        var mouseX = userPosition.clientX - ctx.canvas.getBoundingClientRect().left;
-        var mouseY = userPosition.clientY - ctx.canvas.getBoundingClientRect().top;
+        var mouseX = Math.floor(userPosition.clientX - ctx.canvas.getBoundingClientRect().left);
+        var mouseY = Math.floor(userPosition.clientY - ctx.canvas.getBoundingClientRect().top);
 
         var mousePosition = {
             valueX: mouseX,
@@ -34,7 +34,7 @@ var Rectangle = ((function () {
         };
         // var secondMousePosition = [mouseX,mouseY];
         var status = document.getElementById("status");
-        status.innerHTML = "Mouse Position (Hover): " + mouseX + " | " + mouseY;
+        status.innerHTML = "Mouse Position (Hover): " + mouseX + " | " + Math.abs(mouseY);
 
         //Console Logging the Object of Positions X and Y
         console.log(mousePosition);
@@ -93,16 +93,79 @@ var Rectangle = ((function () {
     }
 
 
+    function enterRectangle() {
+        var width = document.getElementById("recWid").value;
+        var height = document.getElementById("recHgt").value;
+        var area = document.getElementById("areaOutput");
+        var perimeter = document.getElementById("perimOutput");
+        var posX = document.getElementById('positionX').value;
+        var posXNoValue = document.getElementById('positionX');
+        var posYNoValue = document.getElementById('positionY');
+        var posY = document.getElementById('positionY').value;
+        var status = document.getElementById('status');
+
+        var mousePositionX = getCoord(event).valueX;
+        var mousePositionY = getCoord(event).valueY;
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(posX, posY, width, height);
+
+
+        if (width && height) {
+            area.value = (width * width) + (height * height) + " px";
+            perimeter.value = (width + width) + (height + height) + " px";
+            // status.innerHTML = "Mouse Position (Inputs)" + Math.abs(mousePositionX) + " | " + +Math.abs(mousePositionY);
+            posXNoValue.value = getCoord(event).valueX;
+            posYNoValue.value = Math.floor(Math.abs(getCoord(event).valueY));
+
+
+            return {
+                width: this.width,
+                height: this.height,
+                positionX: posX,
+                positionY: posY,
+                area: this.area,
+                perimeter: this.perimeter
+            };
+        }
+    }
+
+    function clearCanvas() {
+        ctx.clearRect(0,0, canvas.width, canvas.height);
+        document.getElementById('positionX').value = "";
+        document.getElementById('positionY').value = "";
+        document.getElementById('recWid').value = "";
+        document.getElementById('recHgt').value = "";
+        document.getElementById('status').innerHTML = "Mouse Position (Inputs): " +  0 + " | " + 0;
+        document.getElementById('areaOutput').innerHTML = "";
+        document.getElementById('perimOutput').innerHTML = "";
+
+        document.getElementById('myButton').addEventListener('click', function () {
+            // document.getElementById('status').innerHTML = enterRectangle().positionX + " | " + Math.abs(enterRectangle().positionY);
+        });
+    }
+
+
     //Initializing Function
     function init() {
         // "use strict";
+
+        //Buttons
+        var button = document.getElementById('myButton');
         canvasSizing();
+
+        var clearButton = document.getElementById('clearButton');
+
         ctx.canvas.addEventListener("mousedown", mouseDown, false);
         ctx.canvas.addEventListener("mousemove", mouseMove, false);
         ctx.canvas.addEventListener("mouseup", mouseUp, false);
         ctx.canvas.addEventListener("touchstart", mouseDown, false);
         ctx.canvas.addEventListener("touchmove", mouseMove, false);
         ctx.canvas.addEventListener("touchend", mouseUp, false);
+
+        //Calculate Methods
+        button.addEventListener('click', enterRectangle);
+        clearButton.addEventListener('click', clearCanvas);
     }
 
     return {init: init};
