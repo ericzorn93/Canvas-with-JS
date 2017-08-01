@@ -80,15 +80,19 @@ var Rectangle = ((function () {
         var recWid = Math.abs(rectangleDimensions.x);
         var recHgt = Math.abs(rectangleDimensions.y);
         var finishedText = document.getElementById("finished");
+        var posX = document.getElementById("positionX");
+        var posY = document.getElementById("positionY");
 
         //Fill Out Form
         if (mousePressed === false) {
             ctx.closePath();
-            width.value = recWid + " px";
-            height.value = recHgt + " px";
-            area.value = (recWid * recHgt) + " px";
-            perimeter.value = (recWid + recWid + recHgt + recHgt) + " px";
+            width.value = parseFloat(recWid + " px");
+            height.value = parseFloat(recHgt + " px");
+            area.value = parseFloat((recWid * recHgt) + " px");
+            perimeter.value = parseFloat((recWid + recWid + recHgt + recHgt) + " px");
             finishedText.innerHTML = "You have successfully drawn a rectangle! Good Job!";
+            posX.value = getCoord(event).valueX;
+            posY.value = getCoord(event).valueY;
         }
     }
 
@@ -116,7 +120,7 @@ var Rectangle = ((function () {
             ctx.beginPath();
             ctx.fillRect(width, height, posX, posY);
             area.value = (width * width) + (height * height) + " px";
-            perimeter.value = (width * 2) + (height * 2);
+            perimeter.value = (width * 2) + (height * 2) + " px";
             // status.innerHTML = "Mouse Position (Inputs)" + Math.abs(mousePositionX) + " | " + +Math.abs(mousePositionY);
             posXNoValue.value = getCoord(event).valueX;
             posYNoValue.value = Math.floor(Math.abs(getCoord(event).valueY));

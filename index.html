@@ -45,36 +45,37 @@ Updated at 2:34pm EST on July 29, 2017
     <!-- Form for Rectangle Canvas -->
 
     <form id="rectangleForm">
+        <fieldset>
+            <label for="recWid">Width:</label>
+            <input id="recWid" type="text" placeholder='0' name="width"/>
 
-        <label for="recWid">Width:</label>
-        <input id="recWid" type="text" placeholder='0' name="width"/>
+            <label for="recHgt">Height:</label>
+            <input id="recHgt" type="text" placeholder='0' name="height"/>
 
-        <label for="recHgt">Height:</label>
-        <input id="recHgt" type="text" placeholder='0' name="height"/>
+            <br/>
+            <br/>
+            <br/>
+            <label for="positionX">PositionX: (Optional)</label>
+            <input id="positionX" type="text" placeholder="0" name="positionX"/>
 
-        <br/>
-        <br/>
-        <br/>
-        <label for="positionX">PositionX: (Optional)</label>
-        <input id="positionX" type="text" placeholder="0" name="positionX"/>
-
-        <br/>
-        <br/>
-        <label for="positionY">PositionY: (Optional)</label>
-        <input id="positionY" type="text" placeholder="0" name="positionY"/>
+            <br/>
+            <br/>
+            <label for="positionY">PositionY: (Optional)</label>
+            <input id="positionY" type="text" placeholder="0" name="positionY"/>
 
 
-        <br/><br/><br/>
-        <label for="areaOutput">Area:</label>
-        <output id="areaOutput" type="text" name="areaOutput"></output>
-        <br/><br/>
-        <label for="perimOutput">Perimeter:</label>
-        <output id="perimOutput" type="text" name="areaOutput" ></output>
+            <br/><br/><br/>
+            <label for="areaOutput">Area:</label>
+            <output id="areaOutput" type="text" name="areaOutput"></output>
+            <br/><br/>
+            <label for="perimOutput">Perimeter:</label>
+            <output id="perimOutput" type="text" name="areaOutput" ></output>
 
-        <br/> <br/>
+            <br/> <br/>
 
-        <input type="button" id="myButton" value="Calculate and Draw" />
-        <input type="button" id="clearButton" value="Clear Canvas" />
+            <input type="button" id="myButton" value="Calculate and Draw" />
+            <input type="button" id="clearButton" value="Clear Canvas" />
+        </fieldset>
 
     </form>
 
